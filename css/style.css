@@ -1,3 +1,31 @@
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    src: url(/font/OpenSans-Light.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: "Open Sans Bold";
+    font-style: normal;
+    src: url(/font/OpenSans-Bold.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: "Open Sans Regular";
+    font-style: normal;
+    src: url(/font/OpenSans-Regular.ttf) format('ttf');
+}
+
+input {
+    font:normal 14px "Open Sans Regular",Helvetica,Garuda,sans-serif;
+    letter-spacing: 0.5px;
+}
+
+body {
+    font:normal 14px "Open Sans",Helvetica,Garuda,sans-serif;
+    letter-spacing: 0.5px;
+}
+
 .login_reg_container {
     background: #2c3338;
     position: fixed;
@@ -12,7 +40,7 @@
     height:200px;
     position: absolute;
     left:50%;
-    top:50%;
+    top:30%;
     margin:-100px 0 0 -150px;
 }
 
@@ -53,12 +81,58 @@
 }
 
 .login_reg_submit {
-    background-color: #ea4c88;
+    box-sizing: border-box;
+    background-color: #4CAF50;
     color: #eee;
-    font-weight: bold;
     width: 100%;
     text-align: center;
     padding: 15px 0;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: "Open Sans Bold", Arial, sans-serif;
+    font-weight: bold;
     font-size: 14px;
+    border: 1px solid #4CAF50;
+    -webkit-transition: all .2s;
+    transition: all .2s;
 }
+
+.login_reg_submit:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #4CAF50;
+}
+
+.login_reg_submit:active {
+    background-color: #3C8240;
+    color: white;
+    border-color: #3C8240;
+}
+
+.form_control_block {
+    margin-top: 10px;
+}
+
+.form_account {
+    color: #606468;
+    margin: 20px 10px 10px 30px;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.form_reg {
+    margin: 20px 10px 10px 30px;
+    color: white;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.form_reg:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.form_reg_icon {
+    margin: 20px 10px 10px 10px;
+}
+
+.err_input {
+    border: 1px solid red;
+}
+
