@@ -2,17 +2,17 @@
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
-  src: url(/font/OpenSans-Light.ttf) format("ttf"); }
+  src: url(../font/OpenSans-Light.ttf) format("ttf"); }
 
 @font-face {
   font-family: "Open Sans Bold";
   font-style: normal;
-  src: url(/font/OpenSans-Bold.ttf) format("ttf"); }
+  src: url(../font/OpenSans-Bold.ttf) format("ttf"); }
 
 @font-face {
   font-family: "Open Sans Regular";
   font-style: normal;
-  src: url(/font/OpenSans-Regular.ttf) format("ttf"); }
+  src: url(../font/OpenSans-Regular.ttf) format("ttf"); }
 
 input {
   font: normal 14px "Open Sans Regular",Helvetica,Garuda,sans-serif;

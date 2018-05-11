@@ -16,8 +16,24 @@
     "url": "https://github.com/switty5/petshelplayout/issues"
   },
   "homepage": "https://github.com/switty5/petshelplayout#readme",
+  "dependencies": {
+    "browser-sync": "^2.11.0",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^3.1.0",
+    "gulp": "^3.9.0",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "imagemin-pngquant": "^4.2.0",
+    "jquery-form-styler": "^2.0.1"
+  },
   "devDependencies": {
+    "browser-sync": "^2.24.4",
     "gulp": "^3.9.1",
-    "gulp-sass": "^3.2.1"
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^3.2.1",
+    "gulp-watch": "^4.3.9",
+    "rimraf": "^2.5.4"
   }
 }
