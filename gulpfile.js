@@ -16,9 +16,13 @@ var gulp = require('gulp');
  */
 var sass = require('gulp-sass');
 
+gulp.task('sass', function() {
+    // return gulp.src('src/scss/**/*.scss', ['sass']) // Указываем путь хранения исходных scss файлов (source)
+    return gulp.src('src/scss/main.scss', ['sass']) // Указываем путь хранения исходного главного scss файлв (source)
+        .pipe(sass()) // Конвертируем Sass в CSS с помощью gulp-sass
+        .pipe(gulp.dest('css/')) // Указываем путь конечного css файла (destination)
+});
 
 gulp.task('watch', function(){
-    return gulp.watch('src/scss/**/*.scss', ['sass']) // Указываем путь хранения scss файлов(source)
-        .pipe(sass()) // Конвертируем Sass в CSS с помощью gulp-sass
-        .pipe(gulp.dest('app/css')) // Указываем путь css файла(destination)
+    gulp.watch('src/scss/**/*.scss', ['sass']);
 });
