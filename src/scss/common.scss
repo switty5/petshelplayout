@@ -58,5 +58,21 @@ img {
 }
 
 .text-left {
-  text-align: left;;
+  text-align: left;
+}
+
+.nav-alert-message {
+  left: 50%;
+  margin-left: -4px;
+  position: absolute;
+  top: 13px;
+  padding: 0;
+  line-height: 4px;
+  min-height: 4px;
+  min-width: 4px;
+  height: 4px;
+  width: 4px;
+  border-radius: 100%;
+  background-color: #f4516c;
+  color: #fff;
 }

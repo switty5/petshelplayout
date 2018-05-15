@@ -33,14 +33,31 @@ var loginRegPage = {
         if ($password.val() !== $passwordConfirm.val()) {
             $password.parent().parent().addClass("err_input");
             $passwordConfirm.parent().parent().addClass("err_input")
-            console.log($password)
-            console.log($passwordConfirm)
         }
 
     }
 };
 
+var nav = {
+    init: function () {
+        var _this = this;
+        $childLinkToggle = $(".child-link-toggle");
+        $inputSearch = $("#input-search");
+
+        /* TOP nav toggle links */
+        $childLinkToggle.click(function () {
+            $(this).parents('.parent-link-toggle').toggleClass('nav--active');
+        });
+
+        /* Поиск в TOP nav */
+        $inputSearch.keyup(function () {
+            $('.p-dropdown__body').show();
+        });
+    }
+};
+
 $(document).ready(function () {
     loginRegPage.init();
+    nav.init();
     store.init();
 });
