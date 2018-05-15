@@ -40,7 +40,28 @@ var loginRegPage = {
     }
 };
 
+var nav = {
+    init: function () {
+        var _this = this;
+        $menuItem = $(".p-menu__item");
+        $navLinkIcon = $(".p-nav__link-icon");
+        $dropdownForIcons = $(".p-dropdown__for-icons");
+
+        /* TOP меню основные линки(left) */
+        $menuItem.click(function () {
+            $(this).toggleClass('nav--active');
+        });
+
+        /* TOP меню поиск */
+        $navLinkIcon.click(function () {
+            $(this).parents('.p-toolbar__items').toggleClass('nav--active');
+            $(this).siblings(".p-dropdown__for-icons").find('input').focus();
+        });
+    }
+};
+
 $(document).ready(function () {
     loginRegPage.init();
+    nav.init();
     store.init();
 });
